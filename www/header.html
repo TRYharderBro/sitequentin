@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="./assets/vendors/jquery/jquery-3.3.1.min.js"></script>
+	<script src="./assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>
+	<link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	
+	<?php define('page', $_SERVER['PHP_SELF'], true) ?> 
+
+</head>
+<body>
+	<div class="header">
+		<!-- <img src="./assets/img/bandeau.png" class="bandeau" alt="bandeau"> -->
+		
+		<nav>
+			<img src="./assets/img/logo.png" alt="automobile">
+			<?php if(page == "/www/index.php") echo "<div class='here'>" ?>
+				<li><a href="./index.php">Accueil</a></li>
+			<?php if(page == "/www/index.php") echo "</div>" ?>
+			<?php if(page == "/www/vehicules.php") echo "<div class='here'>" ?>
+				<li><a href="./vehicules.php">Les véhicules</a></li>
+			<?php if(page == "/www/vehicules.php") echo "</div>" ?>
+			<?php if(page == "/www/financement.php") echo "<div class='here'>" ?>
+				<li><a href="./financement.php">Financement</a></li>
+			<?php if(page == "/www/financement.php") echo "</div>" ?>
+			<?php if(page == "/www/contact.php") echo "<div class='here'>" ?>
+				<li><a href="./contact.php">Contact</a></li>
+			<?php if(page == "/www/contact.php") echo "</div>" ?>
+			<img src="./assets/img/jour.png" id="jour" onclick="day()">
+		</nav>
+
+	</div>
+
+	<script>
+		function day() {
+			var myImg = document.querySelector("nav > img:last-of-type");
+			var myNavBar = document.querySelector("nav");
+			if(myImg.id=="jour"){
+				myImg.setAttribute("id", "nuit");
+				myNavBar.setAttribute("id", "night");
+			}
+			else if(myImg.id=="nuit"){
+				myImg.setAttribute("id", "jour");
+				myNavBar.setAttribute("id", "day");
+			}
+			return 0;
+		}
+	</script>
+	
+</body>
+</html>

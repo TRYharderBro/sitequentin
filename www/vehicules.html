@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="./assets/vendors/jquery/jquery-3.3.1.min.js"></script>
+	<script src="./assets/vendors/bootstrap/js/bootstrap.bundle.js"></script>
+	<link rel="stylesheet" href="./assets/vendors/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/vendors/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<div class="header">
+		
+		<nav>
+			<img src="./assets/img/logo.png" alt="automobile">
+				<li><a href="./index.html">Accueil</a></li>
+				<li><a href="./vehicules.html">Les véhicules</a></li>
+				<li><a href="./financement.html">Financement</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+			<img src="./assets/img/jour.png" id="jour" onclick="day()">
+		</nav>
+
+	</div>
+
+	<script>
+		function day() {
+			var myImg = document.querySelector("nav > img:last-of-type");
+			var myNavBar = document.querySelector("nav");
+			if(myImg.id=="jour"){
+				myImg.setAttribute("id", "nuit");
+				myNavBar.setAttribute("id", "night");
+			}
+			else if(myImg.id=="nuit"){
+				myImg.setAttribute("id", "jour");
+				myNavBar.setAttribute("id", "day");
+			}
+			return 0;
+		}
+	</script>
+	<title>Vehicules</title>
+</head>
+<body>
+	<div class="parallax">
+		<img src="./assets/img/parallax.jpg" class="bandeau" alt="bandeau">
+	</div>
+	<div class="container1">
+		<aaa style="position: absolute;/*! margin: 5% 0; *//*! height: 50px; */width: 100%;background-color: white;display: flex;position: relative;/*! top: 10%; *//*! left: 26%; *//*! text-transform: uppercase; *//*! font-weight: bold; */justify-content: space-around;padding: 10px;">		
+			<p2>jeu :</p2>
+			<p3 id="textDiv">Nombre de pas : 25</p3>
+		</aaa>
+		<bbb>
+			<img src="./assets/img/sol.png" class="sol">
+			<div class="game">
+				<button type="button" onclick="swap(this.id)" id="1" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="2" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="3" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="4" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="5" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="6" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="7" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="8" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="9" class="hole"></button>
+				<button type="button" onclick="swap(this.id)" id="10" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="11" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="12" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="13" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="14" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="15" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="16" class="white"></button>
+
+				<button type="button" onclick="swap(this.id)" id="17" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="18" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="19" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="20" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="21" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="22" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="23" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="24" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="25" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="26" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="27" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="28" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="29" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="30" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="31" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="32" class="white"></button>
+
+				<button type="button" onclick="swap(this.id)" id="33" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="34" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="35" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="36" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="37" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="38" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="39" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="40" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="41" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="42" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="43" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="44" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="45" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="46" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="47" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="48" class="white"></button>
+
+				<button type="button" onclick="swap(this.id)" id="49" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="50" class="hole"></button>
+				<button type="button" onclick="swap(this.id)" id="51" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="52" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="53" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="54" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="55" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="56" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="57" class="grey"></button>
+				<button type="button" onclick="swap(this.id)" id="58" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="59" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="60" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="61" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="62" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="63" class="white"></button>
+				<button type="button" onclick="swap(this.id)" id="64" class="white"></button>
+			</div>
+		</bbb>
+	</div>
+</body>
+</html>
+
+<script>
+	var count = 0;
+	var first = 0;
+	var buff = 0;
+	var pas = 0;
+
+	function swap(myId) {
+			var myButton = document.getElementById(myId);
+
+			count++;
+
+			if(count == 1){
+				first = myButton.id;
+			}
+			else if(count == 2){
+
+				var button1 = document.getElementById(first);
+				var button2 = document.getElementById(myButton.id);
+
+				if (button1.className == "hole" || button2.className == "hole"){
+					if(button1.id == button2.id-8
+					|| button1.id == button2.id+8
+					|| button1.id == button2.id-1
+					|| button1.id == button2.id+1
+					|| button2.id == button1.id-8
+					|| button2.id == button1.id+8
+					|| button2.id == button1.id-1
+					|| button2.id == button1.id+1){
+
+						buff = button1.className;
+
+						button1.setAttribute("class", button2.className);
+						button2.setAttribute("class", buff);
+
+						pas++;
+						document.getElementById("textDiv" ).innerHTML = "Nombre de pas : "+pas;
+					}
+					// else void window.alert("Impossible");
+				}
+				
+				// // else void window.alert("Impossible");
+
+				first = 0;
+				buff = 0;
+			}
+			if (count >= 2)count = 0;
+	}
+</script>
+<footer class="footer">
+	
+    <div id="footer-sep"></div>
+    <div id="footer-content">
+        <span class="footer-phone">Phone +33 (0)4 42 42 42 42</span>
+        <div class="col1">
+            <a href="./index.html">Accueil</a><br>
+            <a href="./vehicules.html">Vehicules</a><br>
+            <a href="./financement.html">Financement<br></a>
+            <a href="./contact.html">Contact</a>
+        </div>
+        <div class="col2">
+            Restez connecter
+            <br>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+    	</div>
+	</div>	
+</footer>
